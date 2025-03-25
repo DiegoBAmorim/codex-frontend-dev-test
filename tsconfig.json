@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Garante suporte a recursos modernos do JavaScript
+    "module": "ESNext", // Use módulos ES nativos
+    "moduleResolution": "bundler", // Resolve módulos como o Node.js faz
+
+    "jsx": "react-jsx", // Suporte ao JSX moderno do React 17+
+    "esModuleInterop": true, // Habilita a interoperabilidade entre módulos CommonJS e ES
+    "skipLibCheck": true, // Pula a checagem dos tipos nas bibliotecas
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Inclui tipos de dom e ES moderno
+    "resolveJsonModule": true, // Permite importar arquivos JSON
+    "isolatedModules": true, // Garante que cada arquivo seja tratado como um módulo isolado
+    "noEmit": true, // Não emite arquivos de saída, já que o Vite vai lidar com isso
+    "allowImportingTsExtensions": true,
+    "types": ["@testing-library/jest-dom"]
+  }
+  // "include": [
+  //   "src", // Incluir todos os arquivos da pasta src
+  //   "vite.config.ts" // Inclui o arquivo de configuração do Vite
+  // ],
+  // "exclude": [
+  //   "node_modules", // Exclui a pasta node_modules
+  //   "dist" // Exclui a pasta dist (onde a build é gerada)
+  // ]
+}

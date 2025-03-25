@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+@import '@arcgis/core/assets/esri/themes/light/main.css';
+
+.ant-drawer-mask {
+  background-color: rgba(0, 0, 0, 0) !important; /* Transparecer o fundo */
+}
