@@ -23,10 +23,10 @@ export const Drawer = ({ isDrawerOpen = false, setIsDrawerOpen }: Props) => {
       maskClassName='hidden'
       closable={false}
     >
-      <h3 className='font-bold'>Dados do bairro</h3>
+      <h3 className='font-bold mt-4'>Dados do bairro</h3>
 
-      <h4>Id: {selectedLayer?.attributes?.objectid}</h4>
-      <h4>Nome: {selectedLayer?.attributes?.bairro}</h4>
+      <h4 className='font-bold'>Id: {selectedLayer?.attributes?.objectid}</h4>
+      <h4 className='font-bold'>Nome: {selectedLayer?.attributes?.bairro}</h4>
     </DrawerAntd>
   );
 };
