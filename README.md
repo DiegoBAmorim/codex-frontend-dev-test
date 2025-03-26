@@ -18,31 +18,32 @@ ArcGIS API for JavaScript: Utilizado para renderização e manipulação de mapa
 
 📂 Estrutura do Projeto
 
+```bash
 /src
-├── components/           # Componentes reutilizáveis
-│   ├── MapView.tsx       # Componente principal do mapa
-│   ├── MapView.test.tsx  # Arquivo de testes
-│   ├── Drawer.tsx        # Componente de menu lateral
-│   ├── Drawer.test.tsx   # Arquivo de testes
-│   ├── Input.tsx         # Componente de Input
-│   ├── Input.test.tsx    # Arquivo de testes
-│   ├── Header.tsx        # Componente de Header
-│   └── Header.test.tsx   # Arquivo de testes
+├── components/       # Componentes reutilizáveis
+│   ├── MapView.tsx         # Componente principal do mapa
+│   ├── MapView.test.tsx    # Testes do componente MapView
+│   ├── Drawer.tsx          # Componente de menu lateral
+│   ├── Drawer.test.tsx     # Testes do componente Drawer
+│   ├── Input.tsx           # Componente de entrada de dados
+│   ├── Input.test.tsx      # Testes do componente Input
+│   ├── Header.tsx          # Componente de cabeçalho
+│   ├── Header.test.tsx     # Testes do componente Header
 │
-├── hooks/                # Hooks personalizados
-│   ├── useDrawer.ts      # Hook para controle do menu lateral
-│   ├── useSearch.ts      # Hook para busca de localizações
-│   └── useFeatureLayer.ts# Hook para controle das camadas selecionadas
+├── hooks/            # Hooks personalizados
+│   ├── useDrawer.ts        # Hook para controle do menu lateral
+│   ├── useSearch.ts        # Hook para busca de localizações
+│   ├── useFeatureLayer.ts  # Hook para controle das camadas selecionadas
 │
-├── pages/                # Páginas da aplicação
-│   └── Home.tsx          # Tela inicial
+├── pages/            # Páginas da aplicação
+│   ├── Home.tsx           # Tela inicial
 │
-├── styles/               # Arquivos de estilo (Tailwind configurado)
+├── styles/           # Arquivos de estilo (Tailwind configurado)
 │
-├── tests/                # Testes unitários e de integração
+├── tests/            # Testes unitários e de integração
 │
-├── App.tsx               # Componente raiz da aplicação
-└── index.tsx             # Ponto de entrada do React
+├── App.tsx           # Componente raiz da aplicação
+├── index.tsx         # Ponto de entrada do React
 
 🎯 Funcionalidades Implementadas
 
