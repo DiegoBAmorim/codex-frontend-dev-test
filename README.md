@@ -1,12 +1,85 @@
-# React + Vite
+📌 Nome do Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📖 Descrição
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido para Teste Front-End Codex. A aplicação utiliza React para a construção da interface, garantindo uma experiência responsiva e moderna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+React: Biblioteca principal para desenvolvimento da interface.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Yarn: Gerenciador de pacotes para instalação e gestão de dependências.
+
+Tailwind CSS: Framework CSS utilitário para estilização rápida e responsiva.
+
+Ant Design: Biblioteca de componentes prontos para otimização do desenvolvimento.
+
+ArcGIS API for JavaScript: Utilizado para renderização e manipulação de mapas interativos.
+
+📂 Estrutura do Projeto
+
+/src
+├── components/ # Componentes reutilizáveis
+│ ├── MapView.tsx # Componente principal do mapa
+│ ├── MapView.test.tsx # arquivo de testes
+│ ├── Drawer.tsx # Componente de menu lateral
+│ ├── Drawer.test.tsx # arquivo de testes
+│ ├── Input.tsx # Componente de Input
+│ ├── Input.test.tsx # arquivo de testes
+│ ├── Header.tsx # Componente de Header
+│ └── Header.test.tsx # arquivo de testes
+├── hooks/ # Hooks personalizados
+│ ├── useDrawer.ts # Hook para controle do menu lateral
+│ ├── useSearch.ts # Hook para busca de localizações
+│ └── useFeatureLayer.ts # Hook para controle das camadas selecionadas
+│  
+├── pages/ # Páginas da aplicação
+│ └── Home.tsx # Tela inicial
+├── styles/ # Arquivos de estilo (Tailwind configurado)
+├── tests/ # Testes unitários e de integração
+├── App.tsx # Componente raiz da aplicação
+└── index.tsx # Ponto de entrada do React
+
+🎯 Funcionalidades Implementadas
+
+Exibição de Mapa Interativo usando a API do ArcGIS.
+
+Camadas de Feições carregadas dinamicamente.
+
+Busca Inteligente com useSearch, permitindo filtragem de localizações.
+
+Menu Lateral controlado pelo hook useDrawer.
+
+Uso de Componentes do Ant Design para formulários, botões e modais.
+
+Responsividade e estilização via Tailwind CSS.
+
+🛠️ Como Rodar o Projeto
+
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+Entre na pasta do projeto:
+
+cd nome-do-projeto
+
+Instale as dependências:
+
+yarn install
+
+Inicie o servidor de desenvolvimento:
+
+yarn dev
+
+Acesse no navegador: http://localhost:3000
+
+✅ Testes
+
+Os testes foram implementados usando Jest e Testing Library. Para rodar os testes, utilize:
+
+yarn test
+
+📌 Considerações Finais
+
+O projeto foi estruturado para facilitar manutenção e expansão. Caso haja dúvidas ou sugestões, fique à vontade para contribuir! 🚀
