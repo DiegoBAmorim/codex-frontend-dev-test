@@ -82,12 +82,13 @@ export const MapView: React.FC = () => {
     // Captura feição clicada
     viewInstance.on('click', async (event) => {
       const response = await viewInstance.hitTest(event);
+
       const results = response.results.filter(
-        (result) => result.graphic?.layer
+        (result: __esri.MapViewMediaHit | any) => result.graphic?.layer
       );
 
       if (results.length > 0) {
-        let feature = results[0].graphic;
+        let feature = (results[0] as any).graphic;
         setFeatureLayer(feature);
         openDrawer();
       }
@@ -98,7 +99,7 @@ export const MapView: React.FC = () => {
 
       // Filtra resultados para verificar se há alguma feição clicada
       const hasFeature = response.results.some(
-        (result) => result.graphic?.layer
+        (result: __esri.MapViewMediaHit | any) => result.graphic?.layer
       );
 
       if (!hasFeature) {
